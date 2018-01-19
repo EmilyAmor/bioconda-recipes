@@ -6,7 +6,7 @@ about:
       REF-EVAL.'
 
 build:
-  number: 0
+  number: 1
   string: boost{{CONDA_BOOST}}_{{PKG_BUILDNUM}}
 
 package:
@@ -27,6 +27,8 @@ requirements:
       - samtools 0.1.18
       - perl-threaded
       - boost {{CONDA_BOOST}}*
+      - bowtie
+      - bowtie2
 
 source:
   fn: detonate-1.11.tar.gz.tar.gz
